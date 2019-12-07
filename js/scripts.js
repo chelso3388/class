@@ -3,6 +3,8 @@ $(document).ready(function() {
     event.preventDefault();
     var book = $("input:radio[name=book]:checked").val();
 
+
+
     if (book === "fantasy") {
       $("#biography").hide();
       $("mystery").hide();
@@ -18,3 +20,8 @@ $(document).ready(function() {
     }
   });
 });
+
+
+function myButton() {
+  location.reload();
+  }
