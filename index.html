@@ -1,110 +1,152 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Programming Language Survey</title>
-  </head>
-  <body>
-
-    <div class="flex-container">
-<div class="flex-column">
-    			<div class="jumbotron jumbotron-fluid">
-    			<h1><em>Programming Language Survey</em></h1>
-          </div>
-    		</div>
-    </div>
-
-
-
-    <div class="container5">
-
-    			<div class="panel-body">
-    				<h2><strong><em>Survey Time</em></strong></h2>
-    				<p>Answer these 5 fun survey questions to find out what Programming Language you should learn next.  Each survey will give you the option between 2 or 3 different languages. Below is a list of some of the languages you might get, Have fun!</p>
-            <p id="languages"><strong><em>Programming Languages</em></strong></p>
-            <ol type="1">
-        			<li>Ruby</li>
-        			<li>Javascript</li>
-        			<li>C#</li>
-        			<li>Swift</li>
-        			<li>Python</li>
-        			</ol>
-    			</div>
-    		</div>
-    	</div>
+<head>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.4.1.js">
+	</script>
+	<script src="js/scripts.js">
+	</script>
+	<title>Programming Language Survey</title>
+</head>
+<body>
+	<div class="header">
+		<h1><em>Programming Language Survey</em></h1>
+	</div>
+	<div class="container5">
+		<div class="panel-body">
+			<h2><strong><em>Survey Time</em></strong></h2>
+			<p>Answer these 5 fun survey questions to find out what Programming Language you should learn next. Each survey will give you the option between 2 or 3 different languages. Below is a list of some of the languages you might get, Have fun!</p>
+			<p id="languages"><strong><em>Programming Languages</em></strong></p>
+			<ol type="1">
+				<li>Ruby</li>
+				<li>Javascript</li>
+				<li>C#</li>
+				<li>Swift</li>
+				<li>Python</li>
+			</ol>
+		</div>
+	</div>
 
 
+      <div class="column"
+			<div>
+				<form>
+					<h3>Question 1</h3>
+					<p>What type of book do you prefer?</p>
+					<div class="radio">
+						<label><input checked name="book" type="radio" value="fantasy"> Fantasy</label>
+					</div>
+					<div class="radio">
+						<label><input name="book" type="radio" value="mystery"> Mystery</label>
+					</div>
+					<div class="radio">
+						<label><input name="book" type="radio" value="biography"> Biography</label>
+					</div><button class="submit">Show me info!</button> <button onclick="myButton()">Reset</button>
+				</form>
+				<div id="fantasy">
+					<h1>You got Javascript!</h1>
+					<div class="row">
+						<div class="col-md-3">
+							<p>Did you know?</p>
+							<ul>
+								<li>Javascript has universal support on all popular Web browsers.</li>
+								<li>Javascript lets you make your project dynamic!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="mystery">
+					<h1>You got Ruby!</h1>
+					<div class="row">
+						<div class="col-md-3">
+							<p>Did you know?</p>
+							<ul>
+								<li>It was designed and developed in 1995.</li>
+								<li>Javascript lets you make your project dynamic!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="biography">
+					<h1>You got Python!</h1>
+					<div class="row">
+						<div class="col-md-3">
+							<p>Did you know?</p>
+							<ul>
+								<li>Python was created by Guido van Rossum.</li>
+								<li>Python is one of the most popular Programming languages!</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<form>
 
-
-
-
-    <form>
-            <h2>Question 1</h2>
-            <p>What type of book do you prefer?</p>
-            <div class="radio">
-              <label>
-                <input type="radio" name="book" value="fantasy" checked>
-                Fantasy
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="book" value="mystery">
-                Mystery
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="book" value="biography">
-                Biography
-              </label>
-            </div>
-            <button class="btn" class="submit">Show me info!</button>
-            <button onclick="myButton()">Reset</button>
-      </form>
-          </form>
-
-          <div id="fantasy">
-            <h1>You got Javascript!</h1>
-            <div class="row">
-              <div class="col-md-3">
-              <p>Did you know?</p>
-              <ul>
-                <li>Javascript has universal support on all popular Web browsers.</li>
-                <li>Javascript lets you make your project dynamic!</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div id="mystery">
-            <h1>You got Ruby!</h1>
-            <div class="row">
-              <div class="col-md-3">
-              <p>Did you know?</p>
-              <ul>
-                <li>It was designed and developed in 1995.</li>
-                   <li>Javascript lets you make your project dynamic!</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div id="biography">
-            <h1>You got Python!</h1>
-            <div class="row">
-              <div class="col-md-3">
-              <p>Did you know?</p>
-              <ul>
-                <li>Python was created by Guido van Rossum.</li>
-                   <li>Python is one of the most popular Programming languages!</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
+		<div class="row">
+			<div class="column">
+				<h3>Question 2</h3>
+        <p>What type of book do you prefer?</p>
+        <div class="radio">
+          <label><input checked name="book" type="radio" value="fantasy"> Fantasy</label>
         </div>
-      </body>
-    </html>
+        <div class="radio">
+          <label><input name="book" type="radio" value="mystery"> Mystery</label>
+        </div>
+        <div class="radio">
+          <label><input name="book" type="radio" value="biography"> Biography</label>
+        </div><button class="submit">Show me info!</button> <button onclick="myButton()">Reset</button>
+      </div>
+
+</form>
+
+<form>
+      <div class="column">
+        <h3>Question 3</h3>
+        <p>What type of book do you prefer?</p>
+        <div class="radio">
+          <label><input checked name="book" type="radio" value="fantasy"> Fantasy</label>
+        </div>
+        <div class="radio">
+          <label><input name="book" type="radio" value="mystery"> Mystery</label>
+        </div>
+        <div class="radio">
+          <label><input name="book" type="radio" value="biography"> Biography</label>
+        </div><button class="submit">Show me info!</button> <button onclick="myButton()">Reset</button>
+      </div>
+</form>
+<form>
+      <div class="column">
+        <h3>Question 4</h3>
+        <p>What type of book do you prefer?</p>
+        <div class="radio">
+          <label><input checked name="book" type="radio" value="fantasy"> Fantasy</label>
+        </div>
+        <div class="radio">
+          <label><input name="book" type="radio" value="mystery"> Mystery</label>
+        </div>
+        <div class="radio">
+          <label><input name="book" type="radio" value="biography"> Biography</label>
+        </div><button class="submit">Show me info!</button> <button onclick="myButton()">Reset</button>
+      </div>
+</form>
+
+<form>
+      <div class="column">
+        <h3>Question 5</h3>
+        <p>What type of book do you prefer?</p>
+        <div class="radio">
+          <label><input checked name="book" type="radio" value="fantasy"> Fantasy</label>
+        </div>
+        <div class="radio">
+          <label><input name="book" type="radio" value="mystery"> Mystery</label>
+        </div>
+        <div class="radio">
+          <label><input name="book" type="radio" value="biography"> Biography</label>
+        </div><button class="submit">Show me info!</button> <button onclick="myButton()">Reset</button>
+      </div>
+</form>
+	</div>
+</body>
+</html>
