@@ -1,3 +1,21 @@
+.flex-container {
+  width: auto;
+  height: auto;
+  margin-left: 325px;
+  margin-right: auto;
+  flex-direction: row;
+  display: flex;
+  background-color: white;
+}
+body{
+  background-color: pink;
+}
+.container5{
+  background-color: pink;
+}
+
+
+
 
 #fantasy, #mystery, #biography {
   display: none;
